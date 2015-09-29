@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.2" type="plugin" group="system">
+	<name>BINKQUICKLOGOUT_PLG_NAME</name>
+	<author>Steve Binkowski</author>
+	<creationDate>September 2015</creationDate>
+	<copyright>Copyright (C) 2015 Steve Binkowski. All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>steve@binkcms.com</authorEmail>
+	<version>1.0.0</version>
+	<description>BINKQUICKLOGOUT_PLG_DESCRIPTION</description>
+	<files>
+		<filename>index.html</filename>
+		<filename plugin="quicklogout">quicklogout.php</filename>
+		<folder>language</folder>
+	</files>
+  <languages folder="language">
+     <language tag="en-GB">en-GB/en-GB.plg_system_quicklogout.ini</language>
+     <language tag="en-GB">en-GB/en-GB.plg_system_quicklogout.sys.ini</language>
+  </languages>
+	<config>
+		<fields name="params">
+		  <fieldset name="Options" label="Configure">
+		    <field name="usereturn" type="radio" default="1"
+		      label="BINKQUICKLOGOUT_PLG_OPTION_USERETURN_LABEL"
+		      description="BINKQUICKLOGOUT_PLG_OPTION_USERETURN_DESCRIPTION"
+		      >
+		      <option value="1">Yes</option>
+		      <option value="0">No</option>
+		    </field>
+		    <field name="returnurl" type="url" default="/"
+		      label="BINKQUICKLOGOUT_PLG_OPTION_RETURNURL_LABEL"
+		      description="BINKQUICKLOGOUT_PLG_OPTION_RETURNURL_DESCRIPTION"
+		      />
+		    <field name="triggerclass" type="text" default="bink-quick-logout-link"
+		      label="BINKQUICKLOGOUT_PLG_OPTION_TRIGGERCLASS_LABEL"
+		      description="BINKQUICKLOGOUT_PLG_OPTION_TRIGGERCLASS_DESCRIPTION"
+		      />
+		    <field name="jqname" type="text" default="jQuery"
+		      label="BINKQUICKLOGOUT_PLG_OPTION_JQNAME_LABEL"
+		      description="BINKQUICKLOGOUT_PLG_OPTION_JQNAME_DESCRIPTION"
+		      />
+      </fieldset>
+		</fields>
+	</config>
+</extension>
