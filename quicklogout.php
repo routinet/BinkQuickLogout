@@ -56,7 +56,7 @@ class plgSystemQuickLogout extends JPlugin
     }
   }
 
-  public function onBeforeRender($context, $article, $params, $page = 0)
+  public function onBeforeRender()
   {
     $this->_injectJS($this->_generateLink());
   }
