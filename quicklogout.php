@@ -1,4 +1,15 @@
 <?php
+/**
+ * @package Plugin Bink's QuickLogout for Joomla! 3
+ * @version 1.0.0
+ * @author Steve Binkowski
+ * @copyright (C) 2015 Steve Binkowski
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ *
+ * A plugin for Joomla! 3.x CMS to allow for one-click logout links.
+ * Requires jQuery to be loaded.
+**/
+
 defined('_JEXEC') or die;
 
 class plgSystemQuickLogout extends JPlugin
